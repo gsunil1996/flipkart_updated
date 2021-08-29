@@ -743,15 +743,19 @@ function appendDataP(d) {
         let p_el = document.createElement('p');
         p_el.innerHTML = product_name;
       p_el.setAttribute("class", "p_Att");
-      
-let p_pricing = document.createElement('p');   
+    
+      let p_pricing = document.createElement('p');   
         p_pricing.setAttribute("class", "p_pricing");
-        p_pricing.innerHTML = product_price;
-
+        p_pricing.innerHTML = `From ₹ ${product_price}<span style="color: gray"> (7% off)</span>`;
+       let divvv = document.createElement("div");
+      divvv.setAttribute("id", "rating");
+      divvv.innerHTML = `<div>
+   <span>4.2</span><span class="fa fa-star" aria-hidden="true"></span>
+    </div>`
 
 
         let btn = document.createElement('buttton');
-        div.append(img1, p_el, p_pricing, btn);
+        div.append(img1, p_el,divvv, p_pricing, btn);
         console.log(div)
         sProduct.append(div);
         // store()

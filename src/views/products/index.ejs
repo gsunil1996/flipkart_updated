@@ -28,10 +28,8 @@
     <title>Index page</title>
   </head>
   <body>
-    <div id="sproduct"></div>
-
     <!-- popup  html-->
-    
+
     <div class="offer_popup" style="display: none">
       <div id="parent">
         <div class="box1">
@@ -127,7 +125,7 @@
 
             <div class="font" 1>Enter Password</div>
             <div>
-              <input autocomplete="off" type="password" id="inputcontrol4"/>
+              <input autocomplete="off" type="password" id="inputcontrol4" />
             </div>
           </form>
 
@@ -167,7 +165,6 @@
       </div>
       <div class="navbar-center">
         <input
-          
           type="text"
           oninput="takeValue()"
           id="myInput2"
@@ -189,6 +186,8 @@
       </div>
     </header>
     <!-- -------Navbar finished--------- -->
+    <div id="sproduct"></div>
+
     <section>
       <!-- header section started -->
       <ul class="category-row">
@@ -348,7 +347,8 @@
           </div>
 
           <div class="box-col">
-            <img onclick="goKurtisPage()"
+            <img
+              onclick="goKurtisPage()"
               class="img1"
               src="https://rukminim1.flixcart.com/image/300/300/kl5hh8w0/kurta/i/q/m/m-21fea11923-701872-aurelia-original-imagych3fn7cvrhc.jpeg?q=70"
             />
@@ -829,22 +829,18 @@
 <script src="/static/products/login.js"></script>
 
 <script>
-
-   var setTimerId;
+  var setTimerId;
 
   function takeValue() {
-      //att.style.backgroundColor = 'white';
-      
-      if (setTimerId) {
-        return false;
-      }
-      setTimerId = setTimeout(() => {
+    //att.style.backgroundColor = 'white';
 
-        main();
-        setTimerId = undefined;
-      }, 500);
-      console.log('setTimerId:', setTimerId);
-
-    };
-    
+    if (setTimerId) {
+      return false;
+    }
+    setTimerId = setTimeout(() => {
+      main();
+      setTimerId = undefined;
+    }, 500);
+    console.log("setTimerId:", setTimerId);
+  }
 </script>

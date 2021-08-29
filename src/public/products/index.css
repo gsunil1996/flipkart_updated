@@ -871,25 +871,37 @@ li {
 }
 /* new work */
 
-#sproduct{
+#sproduct {
   display: flex;
   flex-direction: row;
   width: 100%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  margin-top: 10px;
+  border-radius: 5px;
 }
 
-.p_Div{
-width: 25%;
-height: 250px;
- box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+.p_Div {
+  width: 21%;
+  height: 250px;
+  box-sizing: border-box;
+  padding: 10px 40px;
 }
 
-.p_img{
-  width: 80%;
-  height: 50%;
+.p_img {
+  width: 100%;
+  height: 60%;
   object-fit: cover;
 }
 
-.p_Att{
-  font-size: 20px;
+.p_Att,
+.p_pricing {
+  text-align: center;
+  color: black;
+  font-size: 18px;
   font-weight: 700;
+  padding: 4px 0;
+}
+.p_pricing {
+  font-size: 14px !important;
+  color: green !important;
 }
