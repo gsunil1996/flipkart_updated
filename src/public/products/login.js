@@ -1,9 +1,9 @@
 var popup = document.querySelector(".offer_popup");
 var popup1 = document.querySelector(".offer_popup1");
 var loginn = document.querySelector("#loginn");
- var finishh = document.querySelector("#finishh");
+var finishh = document.querySelector("#finishh");
 var show =  document.querySelector("#show");
-
+let Loginn = document.getElementById("show");
      
   show.addEventListener("click", () => {
    popup.style.display = "block";
@@ -19,8 +19,8 @@ var show =  document.querySelector("#show");
 
 function login() {
     let form = document.getElementById("loginform")
-    let email = form.inputcontrol.value;
-    let password = form.inputcontrol1.value;
+    let email = form.inputcontrol5.value;
+    let password = form.inputcontrol4.value;
 
     let userdata = JSON.parse(localStorage.getItem('data'));
 
@@ -32,11 +32,15 @@ function login() {
       if (email === u && password === p) {
         bool = true;
         alert('login successful');
+        console.log("sunil");
         popup1.style.display = "none";
+        Loginn.innerHTML = `Logout`;
+        
             break;
         }
     }
-    if (bool == false) {
+  if (bool == false) {
+    console.log("fail");
         alert('Invalid Credentials');
     }
 }

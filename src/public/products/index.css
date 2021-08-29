@@ -33,7 +33,9 @@
 .image {
   margin-top: 60px;
 }
-#inputcontrol {
+#inputcontrol,
+#inputcontrol4,
+#inputcontrol5 {
   padding: 8px 10px 10px 0;
   width: 80%;
   color: #000;
@@ -246,7 +248,7 @@
   font-family: "Roboto", sans-serif;
 }
 body {
-  padding: 0 50px;
+  padding: 0 0px;
 }
 
 img {
@@ -731,6 +733,7 @@ h5 + #drop li,
   box-sizing: border-box;
   color: black;
 }
+
 h5 + #drop,
 #dropp,
 #droppp,
@@ -759,7 +762,7 @@ h5 + #drop > li > a,
   background-color: white;
   box-shadow: 0 0 5px #ccc;
   box-sizing: border-box;
-  padding: 0 5px;
+  padding: 0px;
   text-align: center;
   margin-left: -10px;
   z-index: 101;
@@ -904,4 +907,8 @@ li {
 .p_pricing {
   font-size: 14px !important;
   color: green !important;
+}
+.hovering:hover {
+  background-color: rgb(40, 116, 240);
+  color: white !important;
 }
