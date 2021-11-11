@@ -35,7 +35,7 @@ You can Contribute with us to make this more functionable.
 ## Tech Stack
 
 **Frontend:** HTML, CSS, Javascript.
-
+**Backend:** Mongo DB, Express.JS, Node.JS.
 
 ## Tech and Tools we have used
 
